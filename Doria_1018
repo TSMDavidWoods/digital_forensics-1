@@ -1,0 +1,6 @@
+Question: Descirbe process of file recovery.
+
+Answer: You will have to xxd the disk with the designated file in it, then you will have to find the header of that extension of the
+file using grep. Then you will have to note the big number before the colon, search the footer of that file using grep, and then get
+the first number again. Next using the program that calculates hex numbers, subtract the two numbers by each other and get the file
+size. You lastly make a dd of this.
